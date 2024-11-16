@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+
+  <!-- Open Graph Meta Tags -->
+<meta property="og:title" content="Watch Mike Tyson v Paul Livestream">
+<meta property="og:description" content="Don't miss the epic clash between Mike Tyson and Paul! Watch the livestream now.">
+<meta property="og:image" content="https://example.com/background.jpg"> <!-- Replace with the actual URL of the image -->
+<meta property="og:url" content="https://beacons.ai/tysonvpaul"> <!-- Replace with the actual URL of the livestream -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Livestream Sports">
+<meta property="og:locale" content="en_US">
+
+<!-- Twitter Card Meta Tags (Optional but Recommended) -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Watch Mike Tyson v Paul Livestream">
+<meta name="twitter:description" content="Don't miss the epic clash between Mike Tyson and Paul! Watch the livestream now.">
+<meta name="twitter:image" content="https://example.com/background.jpg"> <!-- Replace with the actual URL of the image -->
+<meta name="twitter:url" content="https://beacons.ai/tysonvpaul">
+  
+  <title>Mike Tyson v Paul Livestream</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      background: url('background.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.6);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+    .btn {
+      margin: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay"></div>
+  <div class="container">
+    <h1 class="display-4">Watch Livestream Mike Tyson v Paul</h1>
+    <div class="mt-4">
+      <a class="btn btn-primary btn-lg" id="watch-livestream" href="https://locked2.com/cl/i/5kdgj1" role="button">Watch Livestream</a>
+      <button class="btn btn-success btn-lg" id="share-whatsapp">Share on WhatsApp</button>
+      <button class="btn btn-primary btn-lg" id="share-facebook">Share on Facebook</button>
+    </div>
+  </div>
+
+  <!-- Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Redirect to WhatsApp with a custom message
+    document.getElementById('share-whatsapp').addEventListener('click', function() {
+      const message = encodeURIComponent("Watch the Mike Tyson v Paul Livestream! Check it out here: https://example.com/watch");
+      window.open(`https://wa.me/?text=${message}`, '_blank');
+    });
+
+    // Redirect to Facebook share
+    document.getElementById('share-facebook').addEventListener('click', function() {
+      const url = encodeURIComponent("https://example.com/watch");
+      window.open(`https://www.facebook.com/sharer/sharer.php?u=${url}`, '_blank');
+    });
+
+    // Change the link of the "Watch Livestream" button if necessary
+    document.getElementById('watch-livestream').addEventListener('click', function(event) {
+      // Customize the link as needed
+      const link = "https://locked2.com/cl/i/5kdgj1";
+      this.setAttribute('href', link);
+    });
+  </script>
+</body>
+</html>
