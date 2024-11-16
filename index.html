@@ -54,7 +54,7 @@
 <body>
   <div class="overlay"></div>
   <div class="container">
-    <h1 class="display-4">Watch Livestream Mike Tyson v Paul</h1>
+    <h1 class="display-4">Watch Livestream Mike Tyson v Paul - *Share on WhatsApp/Facebook first.</h1>
     <div class="mt-4">
       <a class="btn btn-primary btn-lg" id="watch-livestream" href="https://locked3.com/cl/i/5kdgj1" role="button">Watch Livestream</a>
       <button class="btn btn-success btn-lg" id="share-whatsapp">Share on WhatsApp</button>
@@ -67,13 +67,13 @@
   <script>
     // Redirect to WhatsApp with a custom message
     document.getElementById('share-whatsapp').addEventListener('click', function() {
-      const message = encodeURIComponent("Watch the Mike Tyson v Paul Livestream! Check it out here: https://example.com/watch");
+      const message = encodeURIComponent("Watch the Mike Tyson v Paul Livestream! Check it out here: https://livestreamjake.github.io/paulvtyson/");
       window.open(`https://wa.me/?text=${message}`, '_blank');
     });
 
     // Redirect to Facebook share
     document.getElementById('share-facebook').addEventListener('click', function() {
-      const url = encodeURIComponent("https://example.com/watch");
+      const url = encodeURIComponent("https://livestreamjake.github.io/paulvtyson/");
       window.open(`https://www.facebook.com/sharer/sharer.php?u=${url}`, '_blank');
     });
 
